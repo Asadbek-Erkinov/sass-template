@@ -1,0 +1,63 @@
+@use "../abstracts/mixins" as m;
+
+.site-header {
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.site-header__img-wrap {
+  background-image: url("/images/navimg.png");
+  width: 251px;
+  height: 177px;
+  content: "";
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.site-header__menu {
+  display: flex;
+} 
+
+.menu-list {
+  @include m.list-unstyled;
+  column-gap: 62px;
+}
+
+// .menu__item {
+
+// }
+
+.menu__btn-first {
+  background-image: url("/images/icons/searchicon.svg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__btn {
+  background-image: url("/images/icons/suitcaseicon.svg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__btn-last {
+  background-image: url("/images/icons/menuicon.svg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;  
+  border: none;
+  background-color: transparent;
+} 

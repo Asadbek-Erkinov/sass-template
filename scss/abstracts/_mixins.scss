@@ -1,0 +1,19 @@
+@mixin list-unstyled {
+  list-style-type: none;
+  margin-block: 0;
+  padding-left: 0;
+}
+
+@mixin links-style {
+  background-color: #FF9401;
+  padding: 16px 32px;
+  border-radius: 31px;
+  text-decoration-line: none;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  text-transform: capitalize;
+}
+

@@ -1,0 +1,101 @@
+@use "../abstracts/mixins" as m;
+
+.recipes {
+  background-color: #FF94010D;
+  padding-top: 87px;
+  padding-bottom: 27px;
+}
+
+.recipes__inner {
+  
+}
+
+.recipes__span {
+  display: block;
+  color: #FF9401;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 125% */ 
+  text-align: center;
+}
+
+.recipes__title {
+  color: #2E2E2E;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 125% */
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 73px;
+}
+
+.recipes__list {
+  @include m.list-unstyled;
+  display: flex;
+  column-gap: 54px;
+}
+
+.recipes__item {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.recipes__item-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipes__item-title {
+  color: #2E2E2E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 300% */
+  margin: 0;
+}
+
+.recipes__item-span {
+  display: inline-block;
+  color: #818181;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 375% */
+}
+
+.recipes__item-link {
+  text-decoration-line: none;
+  color: #696969;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 600% */
+  border-radius: 15px;
+  background-color: rgba(196, 196, 196, 0.26);
+  padding-inline: 12px;
+  padding-block: 9px;
+  margin-right: 184px;
+}
+
+.recipes__item-spann {
+  color: #FF9401;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 60px; 
+}
+
+.recipes__link-wrap {
+  margin-top: 72px;
+  text-align: center
+}
+
+.recipes__link {
+  @include m.links-style;
+  display: inline-block;
+  margin-inline: auto;
+}

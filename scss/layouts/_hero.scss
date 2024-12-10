@@ -1,0 +1,134 @@
+@use "../abstracts/mixins" as m;
+
+
+.hero {
+  padding-bottom: 131px;
+}
+
+.hero__inner {
+  display: flex;
+}
+
+.hero__text-wrapper {
+  width: 558px;
+}
+
+.hero__title-span {
+  display: inline-flex;
+  align-items: center;
+  
+}
+
+.hero__span {
+  color: #FF9401;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+
+.hero__title-span::before {
+  background-image: url("/images/herotitleimg.png");
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 3px 6px;
+}
+
+.hero__title-span::after {
+  background-image: url("/images/herotitleimg.png");
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+}
+
+.hero__title-spann {
+  display: inline-flex;
+}
+
+.hero__title-spann::before {
+  background-image: url("/images/smileimg.svg");
+  width: 52px;
+  height: 52px;
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat; 
+}
+
+.hero__title-spann::after {
+  background-image: url("/images/smileimg.svg");
+  width: 52px;
+  height: 52px;
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat; 
+}
+
+
+.hero__title {
+  margin: 0;
+  color: #232323;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px; /* 112.5% */
+  margin-block: 16px 13px;
+}
+
+.hero__title-span {
+  display: inline-block;
+}
+
+.hero__desc {
+  margin: 0;
+  color: #3F3232;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 160%; /* 32px */
+  margin-bottom: 44px;
+}
+
+.hero__link {
+  @include m.links-style;
+}
+
+.hero__list {
+  @include m.list-unstyled;
+  display: flex;
+  column-gap: 30px;
+  margin-top: 76px;
+}
+
+.hero__list-link-first {
+  background-image: url("/images/icons/facebookicon.svg");
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.hero__list-link {
+  background-image: url("/images/icons/instagramicon.svg");
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.hero__list-link-last {
+  background-image: url("/images/icons/twittericon.svg");
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+}
